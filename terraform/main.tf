@@ -16,7 +16,7 @@ provider "ibm" {
 #}
 
 data "ibm_resource_group" "group" {
-  is_default = "true"
+  resource_group_id = "dbaf7b298f804846b3510a84e80ca8fb"
 }
 
 
