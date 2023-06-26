@@ -11,9 +11,14 @@ provider "ibm" {
   # Configuration options
 }
 
-data "ibm_resource_group" "default_group" {
-  name = "default"
+#data "ibm_resource_group" "default_group" {
+#  name = "default"
+#}
+
+data "ibm_resource_group" "group" {
+  is_default = "true"
 }
+
 
 resource "ibm_cloudant" "cloudant" {
   name     = "policy-as-code-cloudant"
